@@ -1,0 +1,15 @@
+#parent{
+    width: 160px;
+}
+
+#show-icon{
+    position: absolute;
+    right: 130px;
+    visibility: hidden;
+}
+#show-icon-2{
+    position: absolute;
+    right: 310px;
+    visibility: hidden;
+}
+
