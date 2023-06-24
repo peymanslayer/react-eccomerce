@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { useGetTopSliderQuery } from "../api/topSliderApi";
 import { IFindAllProduct } from "../types/findAllProduct";
+import "../styles/category.css";
 function Category() {
   const { data, error, isLoading } = useGetTopSliderQuery("");
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -28,19 +29,19 @@ function Category() {
   }, [isLoading]);
 
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center w-full">
       <h1 className="text-lg font-bold">دسته بندی</h1>
       {error ? (
         <>error happend</>
       ) : isLoading ? (
         <>Is loading</>
       ) : data ? (
-        <div className="flex flex-row justify-center items-center w-3/4 h-64">
+        <div className="flex flex-row justify-around items-center w-full h-64">
           {getCategoryAndImageOfProductCategory().map((x: any) => {
             return (
-              <div className="flex flex-row justify-center items-center w-1/3 shadow-md shadow-orange-400">
+              <div className="flex flex-row justify-start items-center w-64 h-32  border-2 rounded-md category">
                 <img
-                  className="w-32 h-36"
+                  className="w-20 h-20 m-2"
                   src={`http://localhost:4000/${x.image}`}
                   alt=""
                 />

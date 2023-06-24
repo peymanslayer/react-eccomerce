@@ -17,19 +17,19 @@ function TopSale() {
             <AiOutlineFire size={30} style={{ color: "green" }} />
           </div>
           <div className="flex flex-row justify-start flex-wrap w-full">
-            {data.map((x: IFindAllProduct) => {
+            {data.map((key:IFindAllProduct,x: number) => {
               return (
                 <>
                   <div className="flex flex-col justify-center items-center w-80  mt-10 mr-2 ">
                     <div className="flex flex-row justify-start items-center w-80">
                       <img
                         className="w-28 h-28"
-                        src={`http://localhost:4000/${x.image}`}
+                        src={`http://localhost:4000/${key.image}`}
                         alt=""
                       />
-
-                      <p className="text-ellipsis w-40 text-stone-500">
-                        {x.description}
+                      <h1 className="font-bold text-lg text-teal-400">{x+1}</h1>
+                      <p className="text-ellipsis w-28 text-center overflow-hidden text-stone-500">
+                        {key.description}
                       </p>
                     </div>
                   </div>
