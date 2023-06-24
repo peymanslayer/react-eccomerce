@@ -11,7 +11,7 @@ function TopSale() {
       ) : isLoading ? (
         <>is Loading</>
       ) : data ? (
-        <div className="flex flex-col justify-around items-center w-full h-96 mt-10 mr-10">
+        <div className="flex flex-col justify-around items-center w-full max-h-max mt-10 mr-10">
           <div className="flex flex-row justify-center">
             <h1 className="text-lg ml-2 font-bold">پر فروش ترین کالا ها</h1>
             <AiOutlineFire size={30} style={{ color: "green" }} />

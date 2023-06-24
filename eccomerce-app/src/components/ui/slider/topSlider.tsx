@@ -1,7 +1,7 @@
 import { useGetTopSliderQuery } from "../../../api/topSliderApi";
 import Slider from "react-slick";
 import {HiOutlineShoppingCart} from 'react-icons/hi'
-import { SampleNextArrow, SamplePrevArrow } from "../../../components/customArrow";
+import { SampleNextArrow, SamplePrevArrow } from "../../customArrow";
 import { IFindAllProduct } from "../../../types/findAllProduct";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -31,7 +31,7 @@ function TopSlider() {
         <Slider  {...settings}>
           {data.map((x: IFindAllProduct) => {
             return (
-             <div className="flex flex-col justify-between items-center w-64 h-64 bg-white m-4 rounded-md ">
+             <div className="flex flex-col justify-between items-center w-64 h-64 bg-white mt-5 mr-1 rounded-md ">
                <img src={`http://localhost:4000/${x.image}`} alt="" />
                <p>{x.description}</p>
                <h3 className="text-orange-600">{x.price}</h3>
