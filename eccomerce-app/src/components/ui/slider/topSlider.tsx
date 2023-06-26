@@ -1,8 +1,5 @@
 import { useGetTopSliderQuery } from "../../../api/topSliderApi";
-import Slider from "react-slick";
-import {HiOutlineShoppingCart} from 'react-icons/hi'
 import { SampleNextArrow, SamplePrevArrow } from "../../customArrow";
-import { IFindAllProduct } from "../../../types/findAllProduct";
 import SliderMain from "./slider";
 
 
@@ -26,7 +23,9 @@ function TopSlider() {
       ) : isLoading ? (
         <>Loading...</>
       ) : data ? (
-        <SliderMain/>
+        <div className={`parent-slider flex flex-row justify-center items-center mt-4 overflow-hidden `}>
+        <SliderMain data={data} option={settings} />
+        </div>
       ) : null}
     </div>
   );

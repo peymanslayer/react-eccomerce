@@ -23,7 +23,7 @@ function AmazingOffersSlider() {
         <>ghjkl</>
       ) : data ? (
         <div className="flex flex-row justify-between items-start w-2/5 h-72 parent-slider2">
-          <div className="w-full h-72">
+          <div className="w-full">
             <Slider {...settings}>
               {data.map((x: IFindAllProduct) => {
                 return (
