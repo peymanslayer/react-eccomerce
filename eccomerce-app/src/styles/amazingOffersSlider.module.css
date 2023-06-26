@@ -1,0 +1,10 @@
+
+.parent-slider2 .slick-slider{
+    background-color: aliceblue;
+}
+
+.parent-slider2  .slick-prev:before,
+.parent-slider2  .slick-next:before{
+    z-index: -1000;
+}
+

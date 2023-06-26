@@ -3,6 +3,7 @@ import Layout from "../../layout/layout";
 import TopSlider from "../../components/ui/slider/topSlider";
 import TopSale from "../../components/topSale";
 import Category from "../../components/category";
+import Offer from "../../components/offer";
 function Home() {
   return (
     <>
@@ -10,6 +11,7 @@ function Home() {
         <TopSlider/>
         <TopSale/>
         <Category/>
+        <Offer/>
       </Layout>
     </>
   );

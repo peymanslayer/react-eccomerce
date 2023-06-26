@@ -1,15 +1,15 @@
-.slick-arrow {
+.parent-slider .slick-arrow {
   top: 200px;
   width: 100px;
   height: 50px;
 }
 
-.slick-dots li.slick-active button:before {
+ .slick-dots li.slick-active button:before {
   color: rgb(7, 134, 7);
 }
 
-.slick-prev:before,
-.slick-next:before {
+.parent-slider .slick-prev:before,
+.parent-slider .slick-next:before {
   color: rgb(7, 129, 7);
 }
 .slick-prev{
@@ -37,7 +37,7 @@
   top: 160px;
 }
 
-.slick-slider{
+.parent-slider .slick-slider{
   width: 98%;
   height: 300px;
   background-color: rgb(59, 59, 177);
