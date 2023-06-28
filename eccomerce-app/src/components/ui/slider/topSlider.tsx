@@ -1,33 +1,55 @@
 import { useGetTopSliderQuery } from "../../../api/topSliderApi";
 import { SampleNextArrow, SamplePrevArrow } from "../../customArrow";
-import SliderMain from "./slider";
-
+import Slider from "react-slick";
+import '../../../styles/topSlider.css';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import { AiOutlineArrowLeft } from "react-icons/ai";
+import { IFindAllProduct } from "../../../types/findAllProduct";
+import SliderList from "./sliderList";
 
 function TopSlider() {
   const { data, error, isLoading } = useGetTopSliderQuery("");
   const settings = {
-    autoplay:true,
-    arrows:true,
+    autoplay: true,
+    arrows: true,
     dots: true,
-    infinite: true,
-    slidesToShow:5,
+    infinite: false,
+    slidesToShow: 6,
     slidesToScroll: 1,
-    nextArrow:<SampleNextArrow/>,
-    prevArrow:<SamplePrevArrow/>
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
   };
-  
+
   return (
-    <div>
+    <>
       {error ? (
         <>Oh no, there was an error</>
       ) : isLoading ? (
         <>Loading...</>
       ) : data ? (
-        <div className={`parent-slider flex flex-row justify-center items-center mt-4 overflow-hidden `}>
-        <SliderMain data={data} option={settings} />
+        <div
+          className={`w-full flex flex-row-reverse justify-center items-center mt-4 overflow-hidden scroll-smooth bg-red-500 `}
+        >
+          <div className="parent-slider w-5/6">
+            <Slider {...settings}>
+              {data.map((x: IFindAllProduct) => {
+                return (
+                  <SliderList option={x}/>
+                );
+              })}
+              <div className="w-56 h-64 rounded-md bg-white  mt-5 mr-2 ml-2 flex flex-col justify-center items-center ">
+                <div className=" w-14 h-14 border border-orange-500 rounded-full mt-2 flex items-center">
+                  <AiOutlineArrowLeft size={20} style={{ color: "orange" }} />
+                </div>
+                <p>پیشنهادات ما</p>
+              </div>
+            </Slider>
+          </div>
+          <div className="text-white w-3/6 text-2xl  ">پیشنهادات ما </div>
         </div>
       ) : null}
-    </div>
+    </>
   );
 }
 
