@@ -4,7 +4,7 @@ import OurOffer from "./ourOffer";
 
 function Offer(){
     return(
-        <div className="w-full flex flex-row justify-around">
+        <div className="w-full flex flex-row justify-around border rounded  ">
      <OurOffer/>
      <AmazingOffersSlider/>
      <AmazingOfferList/>
