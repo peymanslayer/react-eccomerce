@@ -1,5 +1,6 @@
 import { useGetTopSliderQuery } from "../../../api/topSliderApi";
 import { SampleNextArrow, SamplePrevArrow } from "../../customArrow";
+import {useEffect} from 'react'
 import Slider from "react-slick";
 import '../../../styles/topSlider.css';
 import "slick-carousel/slick/slick.css"; 
@@ -17,6 +18,7 @@ function TopSlider() {
     infinite: false,
     slidesToShow: 6,
     slidesToScroll: 1,
+    swipeToSlide:true,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
   };
@@ -32,7 +34,7 @@ function TopSlider() {
           className={`w-full flex flex-row-reverse justify-center items-center mt-4 overflow-hidden scroll-smooth bg-red-500 `}
         >
           <div className="parent-slider w-5/6">
-            <Slider {...settings}>
+            <Slider className="soo" {...settings}>
               {data.map((x: IFindAllProduct) => {
                 return (
                   <SliderList option={x}/>

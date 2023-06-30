@@ -22,8 +22,10 @@ function MobileSlider() {
         <>ghjkl</>
     ):data?(
     <div className="overflow-hidden" >
-      <h1 className="w-72 flex flex-row justify-center text-lg font-bold">موبایل</h1>
-      <hr />
+      <div className="flex flex-col justify-center items-start w-72 mr-10 mt-5">
+      <h1 className="w-24  text-lg font-bold">موبایل</h1>
+      <hr className="w-24 bg-red-700 h-1 mt-1" />
+      </div>
      <Slider {...settings}>
       {data.map((x:IFindAllProduct)=>{
         return <SliderList option={x}/>
