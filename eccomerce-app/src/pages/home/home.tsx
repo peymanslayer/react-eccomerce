@@ -5,6 +5,7 @@ import Category from "../../components/category";
 import Offer from "../../components/offer";
 import MobileSlider from "../../components/ui/slider/mobileSlider";
 import ScrollProducts from "../../components/scrollProducts";
+import HedphoneSlider from "../../components/ui/slider/hedphoneSlider";
 function Home() {
   return (
     <>
@@ -14,6 +15,7 @@ function Home() {
         <Category/>
         <Offer/>
         <MobileSlider/>
+        <HedphoneSlider/>
         <ScrollProducts/>
       </Layout>
     </>
