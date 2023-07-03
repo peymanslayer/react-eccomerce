@@ -29,7 +29,7 @@ function ScrollProductRightSlider() {
             {data.map((x: IFindAllProduct) => {
               return (
                 <SwiperSlide>
-                 <ScrollProductList data={x} className=""/>
+                 <ScrollProductList data={x} className={{inner:"",parent:''}}/>
                 </SwiperSlide>
               );
             })}

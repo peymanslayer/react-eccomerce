@@ -6,6 +6,7 @@ import Offer from "../../components/offer";
 import MobileSlider from "../../components/ui/slider/mobileSlider";
 import ScrollProducts from "../../components/scrollProducts";
 import HedphoneSlider from "../../components/ui/slider/hedphoneSlider";
+import TopSaleOfDay from "../../components/topSaleOfDay";
 function Home() {
   return (
     <>
@@ -17,6 +18,7 @@ function Home() {
         <MobileSlider/>
         <HedphoneSlider/>
         <ScrollProducts/>
+        <TopSaleOfDay/>
       </Layout>
     </>
   );
