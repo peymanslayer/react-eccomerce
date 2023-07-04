@@ -13,12 +13,12 @@ function Category() {
     const uniqItems = [
       ...data
         .reduce(
-          (itemsMap: any, item: any) =>
-            itemsMap.has(item.category)
+          (itemsMap:any, item: IFindAllProduct)=>      
+            itemsMap.has(item.category)              
               ? itemsMap
               : itemsMap.set(item.category, item),
           new Map()
-        )
+          )
         .values(),
     ];
     return uniqItems;

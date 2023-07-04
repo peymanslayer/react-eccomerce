@@ -9,8 +9,8 @@ function AmazingOfferList() {
   let index = 0;
   // when slider changes exact item in list backgroung color and other css changes
   function categoryListHover() {
-    const hover: any = document.getElementsByClassName("hoveron");
-    const text: any = document.getElementsByClassName("text");
+    const hover = document.getElementsByClassName("hoveron") as HTMLCollectionOf<HTMLElement>;
+    const text = document.getElementsByClassName("text") as HTMLCollectionOf<HTMLElement>;
     setInterval(() => {
       if (index > 0) {
         categoryListHoverProsses(hover, text);
@@ -22,7 +22,7 @@ function AmazingOfferList() {
     }, 2500);
   }
 
-  function categoryListHoverProsses(hover: any, text: any) {
+  function categoryListHoverProsses(hover:HTMLCollectionOf<HTMLElement>, text: HTMLCollectionOf<HTMLElement>) {
     if (index === Object.keys(data).length) {
       hover[index - 1].style.backgroundColor = "#dc2626";
       hover[index - 1].style.backgroundColor = "white";
