@@ -16,7 +16,7 @@ function ScrollProductMainSlider() {
       {isLoading ? (
         <>kjhg</>
       ) : data ? (
-        <div className=" scroll-product-main bg-cyan-950  w-4/12 flex flex-col justify-start items-start ">
+        <div className=" scroll-product-main bg-cyan-950  w-4/12 flex flex-col justify-start items-start max-sm:w-4/5 max-sm:mt-10">
           <div className="h-14 mr-10 flex flex-row justify-center items-center">
             <hr className="bg-red-600 h-1 w-10 mt-2 ml-2" />
            <h1 className="text-lg font-bold text-white">موبایل</h1>

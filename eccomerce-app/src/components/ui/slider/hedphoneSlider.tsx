@@ -1,6 +1,7 @@
 import { SampleNextArrow,SamplePrevArrow } from "../../customArrow";
 import { useGetFindProductApiQuery } from "../../../api/findProductApi";
 import { IFindAllProduct } from "../../../types/findAllProduct";
+import { responsive } from "../../../utils/sliderResponsive";
 import SliderList from "./sliderList";
 import Slider from "react-slick";
 
@@ -12,6 +13,7 @@ function HedphoneSlider() {
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 1,
+    responsive,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
   };

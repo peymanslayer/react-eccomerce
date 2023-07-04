@@ -8,13 +8,13 @@ import LeftBottomHeader from './leftBottomHeader'
 function Header(props:any) {
   return (
    <>
-    <div className="flex flex-col justify-center w-full sm:w-fit">
-      <div className="flex flex-row justify-start items-center sm:w-fit">
+    <div className="flex flex-col justify-center w-full ">
+      <div className="flex flex-row w-full justify-around items-center  ">        
         <RightTopHeader />
         <MainTopHeader />
         <LeftTopHeader />
       </div>
-      <div className="flex flex-row justify-between bg-slate-100 h-11 w-full static sm:w-fit">
+      <div className="flex flex-row justify-between bg-slate-100 h-11 w-full static ">
         <RightBottomHeader/>
         <LeftBottomHeader/>
       </div>

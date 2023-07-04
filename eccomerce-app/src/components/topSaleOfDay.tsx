@@ -9,7 +9,7 @@ function TopSaleOfDay(){
             {isLoading?(
                 <>is loading</>
             ):data?(
-                <div className="bg-cyan-950 w-5/6 h-5/6 m-10 rounded-xl flex flex-row justify-around items-start flex-wrap ">
+                <div className="bg-cyan-950 w-5/6 h-5/6 m-10 rounded-xl flex flex-row justify-around items-start flex-wrap max-sm:w-full ">
                     {data.map((x:IFindAllProduct)=>{
                        return <ScrollProductList data={x} className={{inner:'text-white',parent:'border border-2 rounded-xl border-amber-600'}} />
                     })}

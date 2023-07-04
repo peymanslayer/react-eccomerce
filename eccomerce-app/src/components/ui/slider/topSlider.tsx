@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { IFindAllProduct } from "../../../types/findAllProduct";
 import SliderList from "./sliderList";
+import { responsive } from "../../../utils/sliderResponsive";
 
 function TopSlider() {
   const { data, error, isLoading } = useGetTopSliderQuery("");
@@ -19,6 +20,7 @@ function TopSlider() {
     slidesToShow: 6,
     slidesToScroll: 1,
     swipeToSlide:true,
+    responsive,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
   };
@@ -48,7 +50,7 @@ function TopSlider() {
               </div>
             </Slider>
           </div>
-          <div className="text-white w-3/6 text-2xl  ">پیشنهادات ما </div>
+          <div className="text-white w-3/6 text-2xl max-sm:mr-10 ">پیشنهادات ما </div>
         </div>
       ) : null}
     </>

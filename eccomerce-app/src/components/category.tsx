@@ -39,13 +39,13 @@ function Category() {
         <div className="flex flex-row justify-around items-center w-full h-64">
           {getCategoryAndImageOfProductCategory().map((x: any) => {
             return (
-              <div className="flex flex-row justify-start items-center w-64 h-32  border-2 rounded-md category">
+              <div className="flex flex-row justify-start items-center w-64 h-32  border-2 rounded-md category max-sm:w-32 h-32 max-sm:m-1">
                 <img
-                  className="w-20 h-20 m-2"
+                  className="w-20 h-20 m-2 max-sm:w-16 max-sm:h-16"
                   src={`http://localhost:4000/${x.image}`}
                   alt=""
                 />
-                <p className="w-10 ">{x.category}</p>
+                <p className="w-10 max-sm:hidden">{x.category}</p>
               </div>
             );
           })}

@@ -30,21 +30,21 @@ function AmazingOffersSlider() {
                   <div className="flex flex-row justify-around items-around slide h-40">
                     <img
                       src={`http://localhost:4000/${x.image}`}
-                      className="w-32 h-32"
+                      className="w-32 h-32 max-sm:w-24 max-sm:h-24"
                       alt=""
                     />
                     <div className="flex flex-col justify-start items-center h-72">
-                      <h1 className="text-bold text-lg font-bold">{x.price}</h1>
+                      <h1 className="text-bold text-lg font-bold max-sm:text-sm max-sm:mr-2">{x.price}</h1>
                       <div className="flex flex-col justify-center items-center">
                         <p>{x.name}</p>
-                        <p className="mb-4 text-slate-600">{x.description}</p>
+                        <p className="mb-4 text-slate-600 max-sm:hidden">{x.description}</p>
                       </div>
                     </div>
                   </div>
                 );
               })}
             </Slider>
-            <div className="w-36 rounded-t-3xl h-10 bg-red-600 float-left ml-10"></div>
+            <div className="w-36 rounded-t-3xl h-10 bg-red-600 float-left ml-10 max-sm:w-20 h-7"></div>
           </div>
         </div>
       ) : null}

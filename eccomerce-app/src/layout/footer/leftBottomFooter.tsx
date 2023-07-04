@@ -4,7 +4,7 @@ import {AiOutlineWhatsApp} from 'react-icons/ai';
 import {AiOutlineTwitter} from "react-icons/ai";
 function LeftBottomFooter(){
     return(
-        <div className="flex flex-row justify-around w-72 items-center">
+        <div className="flex flex-row justify-around w-72 items-center max-sm:ml-5">
             <AiOutlineInstagram size={30} color="white"/>
             <FaTelegram size={30} color="white"/>
             <AiOutlineWhatsApp size={30} color="white"/>

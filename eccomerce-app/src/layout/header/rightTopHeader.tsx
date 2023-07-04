@@ -5,10 +5,10 @@ import React from "react";
 
 function RightTopHeader() {
   return (
-  <div className="w-3/12 ">
-    <div className="flex flex-row basis-1/4 items-center m-2.5 mb-4">
-      <BsShop size={60} />
-      <p className=" text-3xl m-2.5">exress Shop</p>
+  <div className="lg:w-3/12 sm:w-fit">
+    <div className="lg:flex  lg:flex-row lg:basis-1/4 lg:items-center m-2.5 lg:mb-4 max-sm:w-full max-sm:flex max-sm:flex-row">
+      <BsShop size={60} className="max-sm:hidden"  />
+      <p className=" lg:text-3xl sm:text-xl m-2.5">exress Shop</p>
     </div>
   </div>
   );

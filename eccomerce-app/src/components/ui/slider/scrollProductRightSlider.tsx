@@ -16,7 +16,7 @@ function ScrollProductRightSlider() {
       {isLoading ? (
         <>kjhg</>
       ) : data ? (
-        <div className=" scroll-product  w-4/12 flex flex-col justify-start items-start ">
+        <div className=" scroll-product  w-4/12 flex flex-col justify-start items-start max-sm:w-4/5 ">
           <div className="h-14 mr-10 flex flex-row justify-center items-center">
             <hr className="bg-red-600 h-1 w-10 mt-2 ml-2" />
            <h1 className="text-lg font-bold">موبایل</h1>

@@ -30,7 +30,7 @@ function RightBottomHeader() {
   }
 
   return (
-    <div className="flex flex-row items-center">
+    <div className="flex flex-row items-center max-sm:w-full">
       <div
         className="flex flex-row justify-center h-11 w-1/2 items-center mr-2"
         id="parent"
@@ -39,7 +39,7 @@ function RightBottomHeader() {
         onMouseOut={(e)=>handleOnMouseOutFirstDiv('up-icon','show-icon')}
       >
         <AiOutlineHome size={20} />
-        <p className="p-1 mb-1">صفحه اصلی</p>
+        <p className="p-1 mb-1 max-sm:text-xs max-sm:w-24">صفحه اصلی</p>
         <AiOutlineUpSquare id="up-icon" size={20} />
         <AiOutlineDownSquare size={20} id="show-icon" />
       </div>
@@ -51,12 +51,12 @@ function RightBottomHeader() {
         onMouseOut={(e)=>handleOnMouseOutFirstDiv('up-icon-2','show-icon-2')}
       >
         <CgMenuGridR size={20}/>
-        <p className="p-1 mb-1"> دسته محصولات</p>
+        <p className="p-1 mb-1 max-sm:text-xs"> دسته محصولات</p>
         <AiOutlineUpSquare id="up-icon-2" size={20} />
         <AiOutlineDownSquare size={20} id="show-icon-2" />
       </div>
       <div
-        className="flex flex-row justify-center h-11 w-40 items-center mr-2" id="parent">
+        className="flex flex-row justify-center h-11 w-40 items-center mr-2 max-sm:hidden" id="parent">
         <BsFillChatRightTextFill size={20}/>
         <p className="p-1 mb-1"> وبلاگ</p>
       </div>

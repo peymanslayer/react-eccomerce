@@ -49,7 +49,7 @@ function AmazingOfferList() {
       {isLoading ? (
         <> is loading </>
       ) : data ? (
-        <div className="w-96 h-fit border rounded-tl-lg mt-5">
+        <div className="w-96 h-fit border rounded-tl-lg mt-5 max-sm:hidden">
           {data.map((x: IFindAllProduct) => {
             return (
               <div className="w-full border h-8 hoveron">
