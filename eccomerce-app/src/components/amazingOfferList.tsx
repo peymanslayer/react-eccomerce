@@ -3,15 +3,17 @@ import { IFindAllProduct } from "../types/findAllProduct";
 import { isLoadingProcess } from "../utils/isLoading";
 import { useEffect } from "react";
 
+
 function AmazingOfferList() {
   const { data, error, isLoading } = useGetAmazingOfferListQuery("");
 
   let index = 0;
+  let interval: string | number | NodeJS.Timer | undefined;
   // when slider changes exact item in list backgroung color and other css changes
   function categoryListHover() {
     const hover = document.getElementsByClassName("hoveron") as HTMLCollectionOf<HTMLElement>;
     const text = document.getElementsByClassName("text") as HTMLCollectionOf<HTMLElement>;
-    setInterval(() => {
+    interval= setInterval(() => {
       if (index > 0) {
         categoryListHoverProsses(hover, text);
       } else {
@@ -40,9 +42,12 @@ function AmazingOfferList() {
     }
   }
 
-  useEffect(() => {
-    isLoadingProcess(isLoading, categoryListHover);
-  }, [isLoading, data]);
+  useEffect(() => { 
+      isLoadingProcess(isLoading, categoryListHover);
+      return()=>{
+       clearInterval(interval)
+      }
+  }, [isLoading]);
 
   return (
     <>

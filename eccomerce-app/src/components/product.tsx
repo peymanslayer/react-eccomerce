@@ -1,7 +1,9 @@
+import ProductNavbar from "./productNavbar";
+
 function Product(){
     return(
-        <div>fghjkl;'
-            
+        <div>
+          <ProductNavbar/>
         </div>
     )
 }

@@ -1,6 +1,5 @@
 import { useGetTopSliderQuery } from "../../../api/topSliderApi";
 import { SampleNextArrow, SamplePrevArrow } from "../../customArrow";
-import {useEffect} from 'react'
 import Slider from "react-slick";
 import '../../../styles/topSlider.css';
 import "slick-carousel/slick/slick.css"; 
@@ -9,8 +8,10 @@ import { AiOutlineArrowLeft } from "react-icons/ai";
 import { IFindAllProduct } from "../../../types/findAllProduct";
 import SliderList from "./sliderList";
 import { responsive } from "../../../utils/sliderResponsive";
+import {Link} from 'react-router-dom';
 
 function TopSlider() {
+
   const { data, error, isLoading } = useGetTopSliderQuery("");
   const settings = {
     autoplay: true,
@@ -36,10 +37,10 @@ function TopSlider() {
           className={`w-full flex flex-row-reverse justify-center items-center mt-4 overflow-hidden scroll-smooth bg-red-500 `}
         >
           <div className="parent-slider w-5/6">
-            <Slider className="soo" {...settings}>
+            <Slider  className="soo" {...settings}>
               {data.map((x: IFindAllProduct) => {
                 return (
-                  <SliderList option={x}/>
+                 <Link  to='product' state={{product:x}}> <SliderList  option={x}/> </Link>
                 );
               })}
               <div className="w-56 h-64 rounded-md bg-white  mt-5 mr-2 ml-2 flex flex-col justify-center items-center ">
