@@ -1,6 +1,6 @@
-import { useGetAmazingOfferListQuery } from "../api/amazingOfferListApi";
-import { IFindAllProduct } from "../types/findAllProduct";
-import { isLoadingProcess } from "../utils/isLoading";
+import { useGetAmazingOfferListQuery } from "../../api/amazingOfferListApi";
+import { IFindAllProduct } from "../../types/findAllProduct";
+import { isLoadingProcess } from "../../utils/isLoading";
 import { useEffect } from "react";
 
 

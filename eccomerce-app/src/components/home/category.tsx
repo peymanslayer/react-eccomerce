@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
-import { useGetTopSliderQuery } from "../api/topSliderApi";
-import { IFindAllProduct } from "../types/findAllProduct";
+import { useGetTopSliderQuery } from "../../api/topSliderApi";
+import { IFindAllProduct } from "../../types/findAllProduct";
 import "../styles/category.css";
 function Category() {
   const { data, error, isLoading } = useGetTopSliderQuery("");

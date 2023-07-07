@@ -1,5 +1,5 @@
 import AmazingOfferList from "./amazingOfferList";
-import AmazingOffersSlider from "./ui/slider/amazingOffersSlider";
+import AmazingOffersSlider from "./amazingOffersSlider";
 import OurOffer from "./ourOffer";
 
 function Offer() {

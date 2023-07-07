@@ -1,8 +1,8 @@
 import Slider from "react-slick";
-import { useGetTopSliderQuery } from "../../../api/topSliderApi";
-import { IFindAllProduct } from "../../../types/findAllProduct";
+import { useGetTopSliderQuery } from "../../api/topSliderApi";
+import { IFindAllProduct } from "../../types/findAllProduct";
 
-import "../../../styles/amazingOffersSlider.module.css";
+import "../../styles/amazingOffersSlider.module.css";
 
 function AmazingOffersSlider() {
   const { data, error, isLoading } = useGetTopSliderQuery("");

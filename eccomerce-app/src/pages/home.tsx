@@ -1,12 +1,12 @@
 import Layout from "../layout/layout";
-import TopSlider from "../components/ui/slider/topSlider";
-import TopSale from "../components/topSale";
-import Category from "../components/category";
-import Offer from "../components/offer";
-import MobileSlider from "../components/ui/slider/mobileSlider";
-import ScrollProducts from "../components/scrollProducts";
-import HedphoneSlider from "../components/ui/slider/hedphoneSlider";
-import TopSaleOfDay from "../components/topSaleOfDay";
+import TopSlider from "../components/home/topSlider";
+import TopSale from "../components/home/topSale";
+import Category from "../components/home/category";
+import Offer from "../components/home/offer";
+import MobileSlider from "../components/home/mobileSlider";
+import ScrollProducts from "../components/home/scrollProducts";
+import HedphoneSlider from "../components/home/hedphoneSlider";
+import TopSaleOfDay from "../components/home/topSaleOfDay";
 function Home() {
   return (
     <>

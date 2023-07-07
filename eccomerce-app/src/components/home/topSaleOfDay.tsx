@@ -1,7 +1,7 @@
-import {  useGetAmazingOfferListQuery } from '../api/amazingOfferListApi';
-import '../styles/topSaleOfDay.css'
-import { IFindAllProduct } from "../types/findAllProduct";
-import ScrollProductList from "./ui/slider/scrollProductList";
+import {  useGetAmazingOfferListQuery } from '../../api/amazingOfferListApi';
+import '../../styles/topSaleOfDay.css'
+import { IFindAllProduct } from "../../types/findAllProduct";
+import ScrollProductList from "../ui/list/scrollProductList";
 function TopSaleOfDay(){
     const {data,isLoading,error}=useGetAmazingOfferListQuery('')
     return(

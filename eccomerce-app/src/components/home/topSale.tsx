@@ -1,6 +1,6 @@
 import { AiOutlineFire } from "react-icons/ai";
-import { useGetTopSliderQuery } from "../api/topSliderApi";
-import { IFindAllProduct } from "../types/findAllProduct";
+import { useGetTopSliderQuery } from "../../api/topSliderApi";
+import { IFindAllProduct } from "../../types/findAllProduct";
 
 function TopSale() {
   const { data, error, isLoading } = useGetTopSliderQuery("");

@@ -1,5 +1,5 @@
 import Layout from "../layout/layout";
-import Product from "../components/product";
+import Product from "../components/product/product";
 
 function ProductPage(){
     return (

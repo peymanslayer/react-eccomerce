@@ -1,13 +1,13 @@
-import { useGetTopSliderQuery } from "../../../api/topSliderApi";
-import { SampleNextArrow, SamplePrevArrow } from "../../customArrow";
+import { useGetTopSliderQuery } from "../../api/topSliderApi";
+import { SampleNextArrow, SamplePrevArrow } from "../customArrow";
 import Slider from "react-slick";
 import '../../../styles/topSlider.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import { AiOutlineArrowLeft } from "react-icons/ai";
-import { IFindAllProduct } from "../../../types/findAllProduct";
-import SliderList from "./sliderList";
-import { responsive } from "../../../utils/sliderResponsive";
+import { IFindAllProduct } from "../../types/findAllProduct";
+import SliderList from "../ui/list/sliderList";
+import { responsive } from "../../utils/sliderResponsive";
 import {Link} from 'react-router-dom';
 
 function TopSlider() {
