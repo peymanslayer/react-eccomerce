@@ -2,7 +2,7 @@ import IconsProductDetails from "./iconsProductDetails";
 import ProductsDetailsImage from "./productDetailsImage";
 function ProductsDetails(){
     return(
-        <div className="h-32 w-full ">
+        <div className="h-full w-full flex flex-row justify-around ">
             <IconsProductDetails/>
             <ProductsDetailsImage/>
         </div>

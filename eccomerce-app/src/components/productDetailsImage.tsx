@@ -5,7 +5,7 @@ function ProductsDetailsImage(){
     const {product}=location.state
     return(
         <div>
-            <img src={`http://localhost:4000/${product.image}`} alt="" />
+            <img className='w-72 h-72' src={`http://localhost:4000/${product.image}`} alt="" />
         </div>
     )
 }
