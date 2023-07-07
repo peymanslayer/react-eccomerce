@@ -1,9 +1,10 @@
+import ProductMain from "./productMain";
 import ProductNavbar from "./productNavbar";
-
 function Product(){
     return(
         <div>
-          <ProductNavbar/>
+            <ProductNavbar/>
+            <ProductMain/>
         </div>
     )
 }

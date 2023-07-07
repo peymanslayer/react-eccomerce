@@ -40,7 +40,7 @@ function TopSlider() {
             <Slider  className="soo" {...settings}>
               {data.map((x: IFindAllProduct) => {
                 return (
-                 <Link  to='product' state={{product:x}}> <SliderList  option={x}/> </Link>
+                 <Link className="flex flex-row justify-center" to='product' state={{product:x}}> <SliderList  option={x}/> </Link>
                 );
               })}
               <div className="w-56 h-64 rounded-md bg-white  mt-5 mr-2 ml-2 flex flex-col justify-center items-center ">

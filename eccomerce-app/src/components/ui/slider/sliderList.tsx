@@ -4,7 +4,7 @@ import { IFindAllProduct } from "../../../types/findAllProduct";
 function SliderList(props:{option:IFindAllProduct}){
          
          return(
-          <div className="flex flex-col justify-around items-center w-56 h-64 bg-white mt-5 mr-1 ml-2 rounded-md ">
+          <div className="flex flex-col justify-around items-center w-52 h-64 bg-white mt-5 mr-1 ml-2 rounded-md ">
             
                     <img src={`http://localhost:4000/${props.option.image}`} alt="" />
                     <p>{props.option.description}</p>
