@@ -1,9 +1,11 @@
 import TopProductMain from "./topProductMain";
-import "../styles/productMain.css"
+import ProductsDetails from "./productsDetails";
+import "../styles/productMain.css";
 function ProductMain(){
     return(
         <div className="productMain h-fit border rounded-xl ">
             <TopProductMain/>
+            <ProductsDetails/>
         </div>
     )
 }
