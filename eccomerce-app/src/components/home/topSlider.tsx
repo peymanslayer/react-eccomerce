@@ -1,7 +1,7 @@
 import { useGetTopSliderQuery } from "../../api/topSliderApi";
 import { SampleNextArrow, SamplePrevArrow } from "../customArrow";
 import Slider from "react-slick";
-import '../../../styles/topSlider.css';
+import '../../styles/topSlider.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import { AiOutlineArrowLeft } from "react-icons/ai";

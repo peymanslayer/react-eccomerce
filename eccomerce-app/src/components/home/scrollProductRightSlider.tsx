@@ -2,7 +2,7 @@ import { useGetFindProductApiQuery } from "../../api/findProductApi";
 import { IFindAllProduct } from "../../types/findAllProduct";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination,Mousewheel } from "swiper";
-import '../../../styles/scrollProductSlider.css';
+import '../../styles/scrollProductSlider.css';
 import "swiper/css";
 import "swiper/css/pagination";
 import ScrollProductList from "../ui/list/scrollProductList";

@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { useGetTopSliderQuery } from "../../api/topSliderApi";
 import { IFindAllProduct } from "../../types/findAllProduct";
-import "../styles/category.css";
+import "../../styles/category.css";
 function Category() {
   const { data, error, isLoading } = useGetTopSliderQuery("");
   // eslint-disable-next-line react-hooks/exhaustive-deps
