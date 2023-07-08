@@ -4,7 +4,7 @@ import {MdCompareArrows} from 'react-icons/md'
 
 function IconsProductDetails(){
     return(
-        <div className=" h-32 flex flex-col justify-around items-start mr-10 mt-10">
+        <div className=" h-52 flex flex-col justify-around items-start mr-10">
             <AiOutlineLike size={30}/>
             <BsShare size={30}/>
             <MdCompareArrows size={30}/>
