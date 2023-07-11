@@ -2,7 +2,7 @@ import ProductMain from "./productMain";
 import ProductNavbar from "./productNavbar";
 function Product(){
     return(
-        <div>
+        <div className="w-full">
             <ProductNavbar/>
             <ProductMain/>
         </div>

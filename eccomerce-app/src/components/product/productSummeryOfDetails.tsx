@@ -1,6 +1,7 @@
 import {useLocation} from "react-router-dom";
 import {AiFillStar} from "react-icons/ai";
 import ProductColor from "./productColor";
+import ProductFeature from "./productFeature";
 function ProductSummeryOfDetails(){
     const location=useLocation();
     const {product}=location.state
@@ -15,6 +16,7 @@ function ProductSummeryOfDetails(){
           </div>
           </div>
           <ProductColor/>
+          <ProductFeature/>
         </div>
     )
 }
