@@ -1,4 +1,5 @@
 import ProductSellerHealth from "./productSellerHealth";
+import ProductSellerPrice from "./productSellerPrice";
 import ProductSellerWarranty from "./productSellerWarranty";
 import ShopOfProductSeller from "./shopOfProductSeller";
 
@@ -8,6 +9,7 @@ function ProductSeller(){
             <ShopOfProductSeller/>
             <ProductSellerWarranty/>
             <ProductSellerHealth/>
+            <ProductSellerPrice/>
         </div>
     )
 }
