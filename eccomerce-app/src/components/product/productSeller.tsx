@@ -1,3 +1,4 @@
+import ProductSellerHealth from "./productSellerHealth";
 import ProductSellerWarranty from "./productSellerWarranty";
 import ShopOfProductSeller from "./shopOfProductSeller";
 
@@ -6,6 +7,7 @@ function ProductSeller(){
         <div className="w-72 h-96 border rounded bg-slate-100 flex flex-col justify-start items-around">
             <ShopOfProductSeller/>
             <ProductSellerWarranty/>
+            <ProductSellerHealth/>
         </div>
     )
 }
