@@ -10,18 +10,27 @@ function Category() {
       console.log("oo");
       return [""];
     }
-    const uniqItems = [
-      ...data
-        .reduce(
-          (itemsMap:any, item: IFindAllProduct)=>      
-            itemsMap.has(item.category)              
-              ? itemsMap
-              : itemsMap.set(item.category, item),
-          new Map()
-          )
-        .values(),
-    ];
-    return uniqItems;
+    // const uniqItems = [
+    //   ...data
+    //     .reduce(
+    //       (itemsMap:any, item: IFindAllProduct)=>      
+    //         itemsMap.has(item.category)              
+    //           ? itemsMap
+    //           : itemsMap.set(item.category, item),
+    //       new Map()
+    //       )
+    //     .values(),
+    // ];
+    // return uniqItems;
+    const filteredArr = data.reduce((acc:Array<IFindAllProduct>, current:IFindAllProduct) => {
+      const x = acc.find((item:IFindAllProduct) => item.category === current.category);
+      if (!x) {
+        return acc.concat([current]);
+      } else {
+        return acc;
+      }
+    }, []);
+    return filteredArr
   }
 
   useEffect(() => {
@@ -37,7 +46,7 @@ function Category() {
         <>Is loading</>
       ) : data ? (
         <div className="flex flex-row justify-around items-center w-full h-64">
-          {getCategoryAndImageOfProductCategory().map((x: any) => {
+          {getCategoryAndImageOfProductCategory().map((x: IFindAllProduct) => {
             return (
               <div className="flex flex-row justify-start items-center w-64 h-32  border-2 rounded-md category max-sm:w-32 h-32 max-sm:m-1">
                 <img

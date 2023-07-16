@@ -26,9 +26,9 @@ function AmazingOfferList() {
 
   function categoryListHoverProsses(hover:HTMLCollectionOf<HTMLElement>, text: HTMLCollectionOf<HTMLElement>) {
     if (index === Object.keys(data).length) {
-      hover[index - 1].style.backgroundColor = "#dc2626";
-      hover[index - 1].style.backgroundColor = "white";
+      hover[index - 1].style.backgroundColor = "#dc2626"
       text[index - 1].style.color = "white";
+      hover[index - 1].style.backgroundColor = "white";  
       text[index - 1].style.color = "black";
       hover[0].style.backgroundColor = "#dc2626";
       text[0].style.color = "white";
