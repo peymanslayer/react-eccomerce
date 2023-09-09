@@ -1,25 +1,30 @@
 import { createSlice } from '@reduxjs/toolkit'
+import { RootState } from '../stores/storeApi'
 
+export interface Cart {
+    value:number
+  }
+const initialState:Cart={
+    value: 0
+}
 export const cartSlice = createSlice({
   name: 'counter',
-  initialState: {
-    cart: 0,
-  },
+  initialState,
   reducers: {
     increment: (state) => {
-      state.cart += 1
+      state.value += 1
     },
     decrement: (state) => {
-      state.cart -= 1
+      state.value -= 1
     },
     incrementByAmount: (state, action) => {
-      state.cart += action.payload
+      state.value += action.payload
     },
   },
 })
 
 export const { increment, decrement, incrementByAmount } = cartSlice.actions
 
-export const selectCount = (state: { counter: { value: number } }) => state.counter.value
+export const userSelector = (state: RootState) => state.cart;
 
 export default cartSlice.reducer
