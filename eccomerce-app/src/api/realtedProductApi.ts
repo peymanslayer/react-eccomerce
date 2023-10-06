@@ -1,7 +1,8 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+import { realtedProductConst } from '../constant/apiConstants';
 
 export const realtedProductApi = createApi({
-    reducerPath: 'realtedProductApi',
+    reducerPath: realtedProductConst,
     baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:4000/' }),
     tagTypes:['Post'],
     endpoints: (builder) => ({
