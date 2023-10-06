@@ -1,6 +1,6 @@
 import { RouterProvider,Route,Routes } from "react-router-dom";
-import HomePage from "../pages/home";
-import ProductPage from "../pages/product";
+import HomePage from "../pages/home/home";
+import ProductPage from "../pages/product/product";
 function Public(){
     return(
         <Routes>

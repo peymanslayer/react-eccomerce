@@ -6,10 +6,11 @@ import ScrollProducts from "./scrollProducts";
 import TopSale from "./topSale";
 import TopSaleOfDay from "./topSaleOfDay";
 import TopSlider from "./topSlider";
+import Layout from "../../layout/layout";
 
 function Home() {
   return (
-    <>
+    <Layout>
       <TopSlider />
       <TopSale />
       <Category />
@@ -18,7 +19,7 @@ function Home() {
       <HedphoneSlider />
       <ScrollProducts />
       <TopSaleOfDay />
-    </>
+    </Layout>
   );
 }
 
